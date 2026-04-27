@@ -1,20 +1,21 @@
-# autoshot-splitter
+# shotsplit
 
-AutoShot-based shot segment range extraction for video files.
+Shot segment range extraction for video files.
 
-The PyPI distribution name is `autoshot-splitter`. The Python import package is
-`shotsplit`.
+The PyPI distribution name and Python import package are both `shotsplit`.
+`shotsplit` currently uses AutoShot as its default shot-boundary detection
+model.
 
 ## Install
 
 ```bash
-python -m pip install autoshot-splitter
+python -m pip install shotsplit
 ```
 
 Or with `uv`:
 
 ```bash
-uv pip install autoshot-splitter
+uv pip install shotsplit
 ```
 
 This installs the package and its runtime dependencies, including PyTorch.
@@ -24,20 +25,20 @@ This installs the package and its runtime dependencies, including PyTorch.
 
 PyPI package metadata cannot encode alternate PyTorch wheel indexes for CPU and
 CUDA builds. To force a specific PyTorch build, install PyTorch first, then
-install `autoshot-splitter`.
+install `shotsplit`.
 
 CPU-only PyTorch:
 
 ```bash
 uv pip install torch --index-url https://download.pytorch.org/whl/cpu
-uv pip install autoshot-splitter
+uv pip install shotsplit
 ```
 
 CUDA 12.8 PyTorch:
 
 ```bash
 uv pip install torch --index-url https://download.pytorch.org/whl/cu128
-uv pip install autoshot-splitter
+uv pip install shotsplit
 ```
 
 The same sequence works with `python -m pip install ...` if you do not use `uv`.

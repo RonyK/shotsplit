@@ -1,7 +1,7 @@
 [project]
-name = "autoshot-splitter"
+name = "shotsplit"
 version = "0.1.0"
-description = "AutoShot-based shot boundary segment extraction for video files."
+description = "Shot boundary segment extraction for video files."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 license = "MIT"
